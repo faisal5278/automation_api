@@ -31,7 +31,7 @@ A full-stack process automation system built with **FastAPI**, **SQLite**, and *
 
 > 📸 Screenshot of full dashboard (no scrolling required):
 
-![Dashboard Screenshot](screenshot.png) 
+![Dashboard Screenshot](screenshot.PNG) 
 
 ---
 
