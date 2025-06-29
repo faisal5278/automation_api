@@ -57,5 +57,3 @@ This project simulates a real-world internal QA system for tracking and optimizi
 
 - Embedded Testing
 
-- DevOps Dashboards
-"# automation_api" 
