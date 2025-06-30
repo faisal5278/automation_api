@@ -1,11 +1,11 @@
 import sqlite3
 from datetime import datetime
 
-# Connect to SQLite database (creates it if it doesn't exist)
+
 conn = sqlite3.connect("test_results.db", check_same_thread=False)
 cursor = conn.cursor()
 
-# Create table if it doesn't exist
+
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS test_results (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -17,7 +17,6 @@ CREATE TABLE IF NOT EXISTS test_results (
 
 conn.commit()
 
-# --- Helper Functions ---
 
 def insert_test_result(module_name, status, timestamp=None):
     if not timestamp:
@@ -53,7 +52,7 @@ def get_summary():
 
 
 if __name__ == "__main__":
-    # Test the setup by inserting a sample row and printing all rows
+  
     insert_test_result("Module_1", "pass")
     results = get_all_results()
     print("Current entries in test_results table:")
