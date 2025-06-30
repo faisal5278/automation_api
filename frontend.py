@@ -6,10 +6,10 @@ API_BASE = "http://127.0.0.1:8000"
 st.set_page_config(page_title="Automation Dashboard", layout="wide")
 st.title("🧪 Process Automation Dashboard")
 
-# ---------- COLUMN LAYOUT ----------
+
 col1, col2 = st.columns(2)
 
-# ----- COLUMN 1: Log + Summary -----
+
 with col1:
     st.subheader("➕ Log New Test Result")
     with st.form("log_form"):
@@ -36,7 +36,7 @@ with col1:
     except:
         st.warning("API is not running")
 
-# ----- COLUMN 2: Table + Update -----
+
 with col2:
     st.subheader("📋 All Test Results")
     try:
